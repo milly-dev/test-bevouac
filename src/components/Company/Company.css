@@ -1,0 +1,8 @@
+.box-company {
+    border: solid 1px gray;
+    padding: 20px;
+    width: 650px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
