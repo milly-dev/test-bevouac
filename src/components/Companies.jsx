@@ -6,7 +6,7 @@ class Companies extends Component {
     state = { data: [], }
 
 componentDidMount(){
-    const token = "_Gw7aZm1C8gWPLl0iLl_uTzuc1U"
+    const token = "vojpIDtmbTrdmSHYNeyH1WVEjsg"
     axios.get("https://api.emploi-store.fr/partenaire/labonneboite/v1/company/?latitude=48.856614&longitude=2.3522219&rome_codes=M1805&sort=score&page_size=10", {headers: {
         Authorization: 'Bearer ' + token //the token is a variable which holds the token
       }}).then((res) => {

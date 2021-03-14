@@ -1,8 +1,45 @@
-.box-company {
-    border: solid 1px gray;
+.box-jobs {
+    background: rgb(243, 239, 239);
     padding: 20px;
-    width: 650px;
-    height: 150px;
+    color: #222;
+    height: 170px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow:10px 5px 5px rgb(190, 190, 190);
+}
+
+.lbb-result__header {
+    background-color: white;
+    justify-content: center;
+    padding-top: 10px; /*responsive*/
+}
+
+.grid-row {
+    background-color: rgb(224, 219, 220);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.grid-col-8 {
+    width: 70%;
+}
+
+.grid-col-4 {
+    flex-direction: column;
+    width: 30%;
+}
+
+.md-text-left {
+    text-align: left !important;
+    padding-left: 40px;
+}
+
+.box-jobs2 {
+    width: 1000px;
+}
+
+.container {
     display: flex;
     justify-content: center;
 }
