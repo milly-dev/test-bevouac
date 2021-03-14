@@ -16,7 +16,7 @@ handleStars = () => {
 
     render() { 
         return (<div>
-        {this.handleStars()}
+        {this.handleStars()} {this.props.value}
         </div>  );
     }
 }

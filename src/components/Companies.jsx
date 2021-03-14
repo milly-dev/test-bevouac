@@ -7,10 +7,12 @@ class Companies extends Component {
 
 componentDidMount(){
     const token = "qn4qx7hLGMKCH3CMHKBsXSXyRyM"
-    axios.get("https://api.emploi-store.fr/partenaire/labonneboite/v1/company/?latitude=48.856614&longitude=2.3522219&rome_codes=M1805&sort=score&page_size=10", {headers: {
+    axios.get("https://api.emploi-store.fr/partenaire/labonneboite/v1/company/?latitude=48.856614&longitude=2.3522219&rome_codes=M1805&sort=score&page_size=10&page=1", {headers: {
         Authorization: 'Bearer ' + token //the token is a variable which holds the token
       }}).then((res) => {
-        const data = res.data.companies;
+        const data = res.data.companies.sort((a, b) => {
+            return b.stars - a.stars;
+        });
         this.setState({
             data,
         });
