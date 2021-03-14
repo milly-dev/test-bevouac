@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Stars from '../Stars';
 import "./Company.css";
 
 class Company extends Component {
@@ -22,7 +23,7 @@ class Company extends Component {
                 </div>
                 <div class="grid-col-4 md-text-right">
                   <h4>Potentiel d'embauche :</h4>
-                  <h4>{this.props.company.stars}</h4>
+                  <Stars value={this.props.company.stars}/>
                 </div>
               </div>
             </div>
